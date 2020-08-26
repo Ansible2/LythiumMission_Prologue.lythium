@@ -1,0 +1,118 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=5;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
+	};
+	class Camera
+	{
+		pos[]={3856.5422,1049.574,6261.5957};
+		dir[]={0.20248725,-0.47819889,0.85473782};
+		up[]={0.11024008,0.87822765,0.46533602};
+		aside[]={0.97318214,8.1158942e-007,-0.23055241};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Aegis_Characters_F_Aegis"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Aegis_Characters_F_Aegis";
+			name="Arma 3 Aegis - Characters and Clothing";
+			author="AveryTheKitty";
+			url="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
+		};
+	};
+};
+randomSeed=6291464;
+class ScenarioData
+{
+	author="Ansible2";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2015;
+		month=10;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Entities
+	{
+		items=2;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={3931.3247,1045.0208,6049.8867};
+			name="marker_0";
+			type="mil_objective";
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3860.2922,1040.9299,6266.6797};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=4;
+					type="B_RadioOperator_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3;
+		};
+	};
+};
