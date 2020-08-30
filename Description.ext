@@ -1,2 +1,7 @@
 #include "defines.hpp"
 #include "controls.hpp"
+
+class CfgKiskaDialogue
+{
+
+};

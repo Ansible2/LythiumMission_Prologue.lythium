@@ -1,0 +1,251 @@
+version=1;
+class GraphItems
+{
+	class Item0
+	{
+		Flags=250;
+		BasicText="";
+		Left=-46.724121;
+		Top=-147.84482;
+		Right=43.275879;
+		Bottom=-97.844818;
+		BgColor=255;
+		class ItemInfo
+		{
+			Text="startState";
+			lStyle=-842150451;
+			Shape=6;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontUnderline=1;
+			FontCharSet=0;
+			ItemType=0;
+			class ItemInfo
+			{
+				Id=0;
+				InitCode="    ";
+			};
+		};
+	};
+	class Item1
+	{
+		Flags=218;
+		BasicText="";
+		Left=-44.568939;
+		Top=-52.586212;
+		Right=45.431061;
+		Bottom=-2.5862122;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="b";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=5;
+			class ItemInfo
+			{
+				Id=1;
+				Condition="      ";
+				Action="        ";
+			};
+		};
+	};
+	class Item2
+	{
+		BasicText="";
+		Left=-48.01001;
+		Top=31.864502;
+		Right=41.990005;
+		Bottom=81.864502;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=2;
+				InitCode="    ";
+			};
+		};
+	};
+	class Item3
+	{
+		Flags=218;
+		BasicText="";
+		Left=-572.26721;
+		Top=-148.97595;
+		Right=-482.26721;
+		Bottom=-98.975952;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="a";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=4;
+			};
+		};
+	};
+	class Item4
+	{
+		Flags=218;
+		BasicText="";
+		Left=530.27417;
+		Top=-144.17462;
+		Right=620.27417;
+		Bottom=-94.174622;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="c";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=5;
+			};
+		};
+	};
+	class Item5
+	{
+		Flags=250;
+		BasicText="";
+		Left=-264.11597;
+		Top=-57.387512;
+		Right=-114.76308;
+		Bottom=3.9117889;
+		class ItemInfo
+		{
+			Text="The diamonds each indicate a dialogue option " \n "to show to the player given their condition." \n "" \n "The condition will be checked after every return " \n "to the current dialogue ""state"" " \n "(IF the option is not already available " \n "to the player)";
+			Align=0;
+			lStyle=1;
+			FontFace="Arial";
+			FontHeight=5;
+		};
+	};
+	class Item6
+	{
+		Flags=4346;
+		BasicText="";
+		Left=-287.91223;
+		Top=5.9927521;
+		Right=-74.036804;
+		Bottom=135.66048;
+		class ItemInfo
+		{
+			Text="Each ""state"" is:" \n "" \n "The current topic of converation, e.g. essentially " \n "the scope of dialogue options the player currently " \n "has available. " \n "" \n "The startState has 3 options available to the player, " \n "for example. So each time we return to the startState" \n "topic, we check each available option in the current state for some info." \n "" \n "We get the following info from the options:" \n "1. Should it be shown according to condition? No? Don't continue checks." \n "2. If it is shown, was it used already? We grey it out if true";
+			Align=0;
+			lStyle=1;
+			FontFace="Arial";
+			FontHeight=5;
+		};
+	};
+};
+class GraphLinks
+{
+	class Link0
+	{
+		From=0;
+		To=1;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link1
+	{
+		From=0;
+		To=3;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link2
+	{
+		From=0;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link3
+	{
+		From=1;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+};
+class Globals
+{
+	NextGroupID=1;
+	NextID=6;
+	FSMName="DialogueFSMDraft";
+	CompileConfig="F:\SteamLibrary\steamapps\common\Arma 3 Tools\FSMEditor\CBA_FSMEditor.cfg";
+	class DefaultLink
+	{
+		ArrowSize=0;
+	};
+	DefaultLinkColor=6316128;
+	DefaultLinkColorFromSelected=6316287;
+	DefaultLinkColorToSelected=6356832;
+	DefaultLinkUseCustom=1;
+	PZoomLeft=-358.8674;
+	PZoomRight=73.720367;
+	PZoomBottom=179.08594;
+	PZoomTop=-138.58774;
+	Clxs=1694;
+	Clys=1244;
+	Aspect=1;
+};
+class Window
+{
+	Flags=2;
+	MaxPosX=-1;
+	MaxPosY=-1;
+	MinPosX=-1;
+	MinPosY=-1;
+	Left=338;
+	Top=338;
+	Right=2258;
+	Bottom=1367;
+	ShowCmd=3;
+	SplitPos=1712;
+};

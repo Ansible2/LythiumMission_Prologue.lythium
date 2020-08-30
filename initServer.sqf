@@ -23,3 +23,7 @@ player addAction
 	"",			// selection
 	""			// memoryPoint
 ];
+
+KISKA_updateDialogueGUI = {
+	
+};
