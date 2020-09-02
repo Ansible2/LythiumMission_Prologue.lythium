@@ -1,0 +1,80 @@
+class DialogueFSMDraft {
+    class startState {
+
+        class gate_TPC1 {
+            targetState = '__3';
+            condition = QUOTE();
+        };
+        class gate_TPC3 {
+            targetState = '__2';
+            condition = QUOTE();
+        };
+        class gate_TPC2 {
+            targetState = 'TPC2_';
+            condition = QUOTE();
+        };
+    };
+    class TPC2_ {
+
+        class gate_1_c {
+            targetState = 'topic_1_c';
+            condition = QUOTE();
+        };
+        class gate_1_a {
+            targetState = '_';
+            condition = QUOTE();
+        };
+        class gate_1_b {
+            targetState = '__1';
+            condition = QUOTE();
+        };
+    };
+    class _ {
+
+    };
+    class __1 {
+
+    };
+    class topic_1_c {
+
+        class gate_1_ca {
+            targetState = 'topic_1_ca';
+            condition = QUOTE();
+        };
+        class gate_1_cb {
+            targetState = 'topic_1_cb';
+            condition = QUOTE();
+        };
+    };
+    class __2 {
+
+        class _ {
+            targetState = '____FAKE____';
+            condition = QUOTE();
+        };
+        class __1 {
+            targetState = '____FAKE____';
+            condition = QUOTE();
+        };
+    };
+    class __3 {
+
+    };
+    class topic_1_ca {
+
+    };
+    class topic_1_cb {
+
+        class gate_2_c2b {
+            targetState = '____FAKE____';
+            condition = QUOTE();
+        };
+        class gate_2_c2a {
+            targetState = '____FAKE____';
+            condition = QUOTE();
+        };
+    };
+    class ____FAKE____ {
+
+    };
+};

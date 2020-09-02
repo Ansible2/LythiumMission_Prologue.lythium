@@ -32,14 +32,14 @@ class GraphItems
 	{
 		Flags=218;
 		BasicText="";
-		Left=-49.909088;
-		Top=42.977722;
-		Right=40.090912;
+		Left=-62.378143;
+		Top=27.391388;
+		Right=55.677216;
 		Bottom=92.977722;
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="2a";
+			Text="topic_1_gate";
 			lStyle=-842150451;
 			Shape=2;
 			FontFace="Arial";
@@ -60,13 +60,13 @@ class GraphItems
 		Flags=250;
 		BasicText="";
 		Left=-51.658173;
-		Top=245.93707;
+		Top=235.80591;
 		Right=38.341843;
-		Bottom=295.93707;
+		Bottom=285.80591;
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="2b";
+			Text="topic_1";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -82,16 +82,16 @@ class GraphItems
 	};
 	class Item3
 	{
-		Flags=218;
+		Flags=4314;
 		BasicText="";
-		Left=-572.26721;
-		Top=-148.97595;
+		Left=-697.99725;
+		Top=-204.32881;
 		Right=-482.26721;
 		Bottom=-98.975952;
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="1";
+			Text="topic_0_abcdefghijklmnop";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -117,7 +117,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="3";
+			Text="2";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -194,7 +194,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="2a2";
+			Text="gate_1_b";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -213,14 +213,14 @@ class GraphItems
 	{
 		Flags=218;
 		BasicText="";
-		Left=155.96161;
-		Top=336.68658;
-		Right=245.96161;
-		Bottom=386.68658;
+		Left=356.80597;
+		Top=331.49872;
+		Right=446.80597;
+		Bottom=381.49872;
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="2a3";
+			Text="gate_1_c";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -246,7 +246,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="2a1";
+			Text="gate_1_a";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -315,14 +315,14 @@ class GraphItems
 	{
 		Flags=250;
 		BasicText="";
-		Left=157.58356;
-		Top=436.69034;
-		Right=247.58357;
-		Bottom=486.69034;
+		Left=358.42792;
+		Top=431.50247;
+		Right=448.42792;
+		Bottom=481.50247;
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="2a3a";
+			Text="topic_1_c";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -442,27 +442,153 @@ class GraphItems
 	{
 		Flags=218;
 		BasicText="";
-		Left=119.40814;
-		Top=174.72964;
-		Right=209.40814;
-		Bottom=224.72964;
-		BgColor=8421440;
+		Left=591.70105;
+		Top=541.77295;
+		Right=681.70105;
+		Bottom=591.77295;
+		BgColor=65535;
 		class ItemInfo
 		{
-			Text="";
+			Text="gate_1_cb";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
-			FontFace="";
+			FontFace="Arial";
 			FontHeight=10;
 			FontWeight=0;
 			FontCharSet=0;
-			ItemType=8;
+			ItemType=4;
 			class ItemInfo
 			{
-				Id=20;
-				Condition="      ";
-				Action="        ";
+				Id=21;
+			};
+		};
+	};
+	class Item19
+	{
+		Flags=218;
+		BasicText="";
+		Left=177.94537;
+		Top=545.55347;
+		Right=267.94537;
+		Bottom=595.55341;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="gate_1_ca";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=22;
+			};
+		};
+	};
+	class Item20
+	{
+		Flags=250;
+		BasicText="";
+		Left=177.76044;
+		Top=625.66113;
+		Right=267.76044;
+		Bottom=675.66113;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="topic_1_ca";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=23;
+			};
+		};
+	};
+	class Item21
+	{
+		Flags=250;
+		BasicText="";
+		Left=596.57428;
+		Top=636.44556;
+		Right=686.57428;
+		Bottom=686.44556;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="topic_1_cb";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=24;
+			};
+		};
+	};
+	class Item22
+	{
+		Flags=218;
+		BasicText="";
+		Left=517.34314;
+		Top=747.08588;
+		Right=607.34314;
+		Bottom=797.08588;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="gate_2_c2a";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=25;
+			};
+		};
+	};
+	class Item23
+	{
+		Flags=218;
+		BasicText="";
+		Left=682.12366;
+		Top=742.63916;
+		Right=772.12366;
+		Bottom=792.63916;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="gate_2_c2b";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=26;
 			};
 		};
 	};
@@ -515,8 +641,8 @@ class GraphLinks
 	};
 	class Link4
 	{
-		From=1;
-		To=18;
+		From=2;
+		To=8;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -527,7 +653,7 @@ class GraphLinks
 	class Link5
 	{
 		From=2;
-		To=8;
+		To=9;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -538,17 +664,6 @@ class GraphLinks
 	class Link6
 	{
 		From=2;
-		To=9;
-		Color=6316128;
-		Flags=2;
-		class Extra
-		{
-			ArrowSize=0;
-		};
-	};
-	class Link7
-	{
-		From=2;
 		To=10;
 		Color=6316128;
 		Flags=2;
@@ -557,7 +672,7 @@ class GraphLinks
 			ArrowSize=0;
 		};
 	};
-	class Link8
+	class Link7
 	{
 		From=3;
 		To=15;
@@ -568,7 +683,7 @@ class GraphLinks
 			ArrowSize=0;
 		};
 	};
-	class Link9
+	class Link8
 	{
 		From=4;
 		To=14;
@@ -579,7 +694,7 @@ class GraphLinks
 			ArrowSize=0;
 		};
 	};
-	class Link10
+	class Link9
 	{
 		From=8;
 		To=12;
@@ -590,7 +705,7 @@ class GraphLinks
 			ArrowSize=0;
 		};
 	};
-	class Link11
+	class Link10
 	{
 		From=9;
 		To=13;
@@ -601,7 +716,7 @@ class GraphLinks
 			ArrowSize=0;
 		};
 	};
-	class Link12
+	class Link11
 	{
 		From=10;
 		To=11;
@@ -612,10 +727,21 @@ class GraphLinks
 			ArrowSize=0;
 		};
 	};
+	class Link12
+	{
+		From=13;
+		To=18;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
 	class Link13
 	{
-		From=14;
-		To=16;
+		From=13;
+		To=19;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -626,7 +752,62 @@ class GraphLinks
 	class Link14
 	{
 		From=14;
+		To=16;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link15
+	{
+		From=14;
 		To=17;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link16
+	{
+		From=18;
+		To=21;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link17
+	{
+		From=19;
+		To=20;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link18
+	{
+		From=21;
+		To=22;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link19
+	{
+		From=21;
+		To=23;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -638,9 +819,8 @@ class GraphLinks
 class Globals
 {
 	NextGroupID=1;
-	NextID=21;
+	NextID=28;
 	FSMName="DialogueFSMDraft";
-	CompileConfig="F:\SteamLibrary\steamapps\common\Arma 3 Tools\FSMEditor\CBA_FSMEditor.cfg";
 	class DefaultLink
 	{
 		ArrowSize=0;
@@ -649,10 +829,10 @@ class Globals
 	DefaultLinkColorFromSelected=6316287;
 	DefaultLinkColorToSelected=6356832;
 	DefaultLinkUseCustom=1;
-	PZoomLeft=-578.28168;
-	PZoomRight=741.88263;
-	PZoomBottom=757.72119;
-	PZoomTop=-211.75012;
+	PZoomLeft=-923.60217;
+	PZoomRight=415.93677;
+	PZoomBottom=689.77051;
+	PZoomTop=-293.92822;
 	Clxs=1694;
 	Clys=1244;
 	Aspect=1;
