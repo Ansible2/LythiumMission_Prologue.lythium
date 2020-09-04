@@ -24,7 +24,7 @@ class GraphItems
 			class ItemInfo
 			{
 				Id=0;
-				InitCode="    ";
+				InitCode="// The function that loads the current topic should get the current speaker too" \n "" \n "";
 			};
 		};
 	};
@@ -39,7 +39,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="topic_1_gate";
+			Text="gate_TPC2";
 			lStyle=-842150451;
 			Shape=2;
 			FontFace="Arial";
@@ -66,7 +66,7 @@ class GraphItems
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="topic_1";
+			Text="TPC2";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -82,16 +82,16 @@ class GraphItems
 	};
 	class Item3
 	{
-		Flags=4314;
+		Flags=218;
 		BasicText="";
-		Left=-697.99725;
-		Top=-204.32881;
-		Right=-482.26721;
-		Bottom=-98.975952;
+		Left=-666.36707;
+		Top=-201.95654;
+		Right=-450.63702;
+		Bottom=-96.603683;
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="topic_0_abcdefghijklmnop";
+			Text="gate_TPC1";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -117,7 +117,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="2";
+			Text="gate_TPC3";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -136,13 +136,13 @@ class GraphItems
 	{
 		Flags=250;
 		BasicText="";
-		Left=-264.11597;
-		Top=-69.484756;
-		Right=-114.76309;
-		Bottom=-8.1854858;
+		Left=-271.82697;
+		Top=-119.12434;
+		Right=-122.47409;
+		Bottom=-57.825073;
 		class ItemInfo
 		{
-			Text="The diamonds each indicate a dialogue option " \n "to show to the player given their condition." \n "" \n "The condition will be checked after every return " \n "to the current dialogue ""state"" " \n "(IF the option is not already available " \n "to the player)";
+			Text="The diamonds each indicate a dialogue option " \n "to show to the player (given their condition is met)." \n "" \n "The condition will be checked after every return " \n "to the current dialogue ""state""/topic" \n "(IF the option is not already available " \n "to the player)";
 			Align=0;
 			lStyle=1;
 			FontFace="Arial";
@@ -153,13 +153,13 @@ class GraphItems
 	{
 		Flags=250;
 		BasicText="";
-		Left=-290.60052;
-		Top=1.288269;
-		Right=-72.12854;
-		Bottom=131.21135;
+		Left=-298.31152;
+		Top=-48.351318;
+		Right=-79.839539;
+		Bottom=81.571762;
 		class ItemInfo
 		{
-			Text="Each ""state"" is:" \n "" \n "The current topic of converation, e.g. essentially " \n "the scope of dialogue options the player currently " \n "has available. " \n "" \n "The startState has 3 options available to the player, " \n "for example. So each time we return to the startState" \n "topic, we check each available option in the current state for some info." \n "" \n "We get the following info from the options:" \n "1. Should it be shown according to condition? No? Don't continue checks." \n "2. If it is shown, was it used already?" \n "- There are three states to this: " \n "   0 (not used, text will be white)," \n "   1 (used, text will be greyish)," \n "   2 (used, option will be ""hidden"" or not added)" \n "3.";
+			Text="Each ""state"" is:" \n "" \n "The current topic of converation, e.g. essentially " \n "the scope of dialogue options the player currently " \n "has available. " \n "" \n "The startState has 3 options available to the player, " \n "for example. So each time we get to a state topic," \n "we check each available option in that state for some info." \n "" \n "We get the following info from the options:" \n "1. Should it be shown according to condition? No? Don't continue checks." \n "2. If it is shown, was it used already?" \n "- There are three states to this: " \n "   0 (not used, text will be white)," \n "   1 (used, text will be greyish)," \n "   2 (used, option will be ""hidden"" or not added)" \n "3.";
 			Align=0;
 			lStyle=1;
 			FontFace="Arial";
@@ -170,13 +170,13 @@ class GraphItems
 	{
 		Flags=250;
 		BasicText="";
-		Left=-224.46384;
-		Top=239.6675;
-		Right=-75.110962;
-		Bottom=300.96677;
+		Left=70.152008;
+		Top=-84.358978;
+		Right=349.33047;
+		Bottom=237.70721;
 		class ItemInfo
 		{
-			Text="This is state b1." \n "" \n "What does that mean?" \n "" \n "Our choice fromt he initial topic was option ""b"", so " \n "now we have entered the first state of our intial" \n "choice from the ""b"" option from the startState." \n "Hence b1";
+			Text="This is state TPC2." \n "" \n "What does that mean?" \n "" \n "While you can defise any name shceme you want (as" \n "long as you keep in mind that states are the topics and" \n "conditions are the player responses), mine is the " \n "following:" \n "" \n "- The initial state when the conversation FSM is first started with the " \n "NPC is the ""startState"" for that FSM." \n "" \n "- The startState has multiple topics from which you can branch your " \n "conversation from. (How are you?, What's the weather like?, etc.)" \n "" \n "- Each topic available from the NPC is named TPC(X)." \n "So topic 1 -> TPC1, topic 2 -> TPC2, etc." \n "" \n "- Following on from there, each of the player responses (shown as conditions) " \n "will be named gate(X)_(Y). Where (X) is the topic's number, and (Y) is a letter" \n "going from ""a to z""." \n "" \n "- So my first response to TPC2? ""gate2_a"". Second? ""gate2_b""." \n "" \n "- So what do I name a topic that is created after gate2_a? TPC2_a. What about" \n "gate2_b? TPC2_b." \n "" \n "- Now farther then that, we just keep adding letters, e.g. the first gate for TPC2_a" \n "would be ""gate2_aa"", and it's new topic would be ""TPC2_aa""." \n "" \n "You may be asking why right now. Well, for some reason there is a limit on the string" \n "length of any of these states or condittions when the FSM is compiled for some reason." \n "Combine that with an interest in being able to trace a complex tree of decisions (it's very" \n "easy to work backward from this) and I developed this as MY method, you can use any" \n "you like.";
 			Align=0;
 			lStyle=1;
 			FontFace="Arial";
@@ -194,7 +194,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="gate_1_b";
+			Text="gate2_b";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -220,7 +220,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="gate_1_c";
+			Text="gate2_c";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -246,7 +246,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="gate_1_a";
+			Text="gate2_a";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -272,7 +272,7 @@ class GraphItems
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="";
+			Text="TPC2_a";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -297,7 +297,7 @@ class GraphItems
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="";
+			Text="TPC2_b";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -322,7 +322,7 @@ class GraphItems
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="topic_1_c";
+			Text="TPC2_c";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -347,7 +347,7 @@ class GraphItems
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="";
+			Text="TPC3";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -390,14 +390,14 @@ class GraphItems
 	{
 		Flags=218;
 		BasicText="";
-		Left=457.48663;
-		Top=5.0669556;
-		Right=547.48663;
-		Bottom=55.066956;
+		Left=467.55536;
+		Top=23.526184;
+		Right=557.55536;
+		Bottom=73.526184;
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="";
+			Text="gate3_a";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -423,7 +423,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="";
+			Text="gate3_b";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -449,7 +449,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="gate_1_cb";
+			Text="gate2_cb";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -475,7 +475,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="gate_1_ca";
+			Text="gate2_ca";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -501,7 +501,7 @@ class GraphItems
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="topic_1_ca";
+			Text="TPC2_ca";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -526,7 +526,7 @@ class GraphItems
 		BgColor=16777215;
 		class ItemInfo
 		{
-			Text="topic_1_cb";
+			Text="TPC2_cb";
 			lStyle=-842150451;
 			Group=-842150451;
 			FontFace="Arial";
@@ -551,7 +551,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="gate_2_c2a";
+			Text="gate2_cba";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -577,7 +577,7 @@ class GraphItems
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="gate_2_c2b";
+			Text="gate2_cbb";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -819,8 +819,9 @@ class GraphLinks
 class Globals
 {
 	NextGroupID=1;
-	NextID=28;
+	NextID=29;
 	FSMName="DialogueFSMDraft";
+	CompileConfig="F:\SteamLibrary\steamapps\common\Arma 3 Tools\FSMEditor\myFSMCFG.cfg";
 	class DefaultLink
 	{
 		ArrowSize=0;
@@ -829,10 +830,10 @@ class Globals
 	DefaultLinkColorFromSelected=6316287;
 	DefaultLinkColorToSelected=6356832;
 	DefaultLinkUseCustom=1;
-	PZoomLeft=-923.60217;
-	PZoomRight=415.93677;
-	PZoomBottom=689.77051;
-	PZoomTop=-293.92822;
+	PZoomLeft=-406.41376;
+	PZoomRight=570.56586;
+	PZoomBottom=519.48865;
+	PZoomTop=-197.96284;
 	Clxs=1694;
 	Clys=1244;
 	Aspect=1;
@@ -842,12 +843,12 @@ class Window
 	Flags=2;
 	MaxPosX=-1;
 	MaxPosY=-1;
-	MinPosX=-1;
-	MinPosY=-1;
-	Left=8;
-	Top=19;
-	Right=1928;
-	Bottom=1048;
+	MinPosX=-32000;
+	MinPosY=-32000;
+	Left=183;
+	Top=182;
+	Right=2103;
+	Bottom=1213;
 	ShowCmd=3;
 	SplitPos=1712;
 };
