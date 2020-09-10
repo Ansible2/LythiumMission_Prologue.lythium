@@ -592,6 +592,23 @@ class GraphItems
 			};
 		};
 	};
+	class Item24
+	{
+		Flags=250;
+		BasicText="";
+		Left=-250.90503;
+		Top=224.8573;
+		Right=-61.02417;
+		Bottom=281.15021;
+		class ItemInfo
+		{
+			Text="NPCs can have different reactions even within the state/response." \n "" \n "each possibile response has a condition, priority, sound file, and line" \n "" \n "if multiple conditions are true, the highest is taken" \n "" \n "if multiple are the highest, we selectRandom";
+			Align=0;
+			lStyle=1;
+			FontFace="Arial";
+			FontHeight=5;
+		};
+	};
 };
 class GraphLinks
 {
@@ -830,10 +847,10 @@ class Globals
 	DefaultLinkColorFromSelected=6316287;
 	DefaultLinkColorToSelected=6356832;
 	DefaultLinkUseCustom=1;
-	PZoomLeft=-406.41376;
-	PZoomRight=570.56586;
-	PZoomBottom=519.48865;
-	PZoomTop=-197.96284;
+	PZoomLeft=-318.56714;
+	PZoomRight=85.282288;
+	PZoomBottom=364.91064;
+	PZoomTop=68.341278;
 	Clxs=1694;
 	Clys=1244;
 	Aspect=1;
@@ -843,12 +860,12 @@ class Window
 	Flags=2;
 	MaxPosX=-1;
 	MaxPosY=-1;
-	MinPosX=-32000;
-	MinPosY=-32000;
-	Left=183;
-	Top=182;
-	Right=2103;
-	Bottom=1213;
+	MinPosX=-1;
+	MinPosY=-1;
+	Left=312;
+	Top=312;
+	Right=2232;
+	Bottom=1343;
 	ShowCmd=3;
 	SplitPos=1712;
 };
