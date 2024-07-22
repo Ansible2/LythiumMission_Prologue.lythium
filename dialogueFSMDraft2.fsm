@@ -1,0 +1,82 @@
+class DialogueFSMDraft {
+    class startState {
+        // The function that loads the current topic should get the current speaker too
+
+
+        class gate_TPC1 {
+            targetState = "_";
+            condition = "";
+        };
+        class gate_TPC3 {
+            targetState = "TPC3";
+            condition = "";
+        };
+        class gate_TPC2 {
+            targetState = "TPC2";
+            condition = "";
+        };
+    };
+    class TPC2 {
+
+        class gate2_c {
+            targetState = "TPC2_c";
+            condition = "";
+        };
+        class gate2_a {
+            targetState = "TPC2_a";
+            condition = "";
+        };
+        class gate2_b {
+            targetState = "TPC2_b";
+            condition = "";
+        };
+    };
+    class TPC2_a {
+
+    };
+    class TPC2_b {
+
+    };
+    class TPC2_c {
+
+        class gate2_ca {
+            targetState = "TPC2_ca";
+            condition = "";
+        };
+        class gate2_cb {
+            targetState = "TPC2_cb";
+            condition = "";
+        };
+    };
+    class TPC3 {
+
+        class gate3_b {
+            targetState = "____FAKE____";
+            condition = "";
+        };
+        class gate3_a {
+            targetState = "____FAKE____";
+            condition = "";
+        };
+    };
+    class _ {
+
+    };
+    class TPC2_ca {
+
+    };
+    class TPC2_cb {
+
+        class gate2_cbb {
+            targetState = "____FAKE____";
+            condition = "";
+        };
+        class gate2_cba {
+            targetState = "____FAKE____";
+            condition = "";
+        };
+    };
+    class ____FAKE____ {
+
+    };
+};
